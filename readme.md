@@ -7,5 +7,6 @@ will ask few questions at this time - press enter
 WIll ask Is this ok? (yes) - type yes
 // ♥npm install --save express - to install express
 node serve.js - should print listening.. ---2
-
+require `express-graphql`
+npm install graphql and express-graphql ---3
 
