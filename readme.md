@@ -9,4 +9,7 @@ WIll ask Is this ok? (yes) - type yes
 node serve.js - should print listening.. ---2
 require `express-graphql`
 npm install graphql and express-graphql ---3
-
+run node server with `node serve.js` command
+You will see a schema error ---4
+define a schema in app.use in serve.js document
+explain schema - where do we get schema and what is it?
