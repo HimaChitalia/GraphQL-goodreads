@@ -1,5 +1,6 @@
 const fetch = require('node-fetch')
 const util = require('util')
+require('util.promisify').shim();
 const parseXML = util.promisify(require('xml2js').parseString)
 const {
   GraphQLObjectType,

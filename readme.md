@@ -20,3 +20,8 @@ xml2js returns callback not promise. SO, you need  to require util to return a p
 install - // ♥npm install --save xml2js ---5
 define new AuthorType and GraphQLSchema
 install node-fetch with command `npm install node-fetch-npm --save` ---6
+util.promisify error ---a
+install util.promisify with the command `npm install util.promisify` --7
+required `require('util.promisify').shim()` in schema.js to make util.promisify work
+
+`
