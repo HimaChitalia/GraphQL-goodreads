@@ -24,6 +24,10 @@ util.promisify error ---a
 install util.promisify with the command `npm install util.promisify` --7
 required `require('util.promisify').shim()` in schema.js to make util.promisify work
 Now if start node server with command `node serve.js`, you should see graphQL server --8
-AT this point, if we run the query, author will be null because we need to put our fetch request in resolver when we export module --8
+AT this point, if we run the query, author will be null because we need to put our fetch request in resolver when we export module --9
 Add resolve in to `AuthorType`, so that GraphQL server would actually know which is the name property from xml document
-run server and see result --9
+run server and see result --10
+define `BookType` to see books's schema and add book's information into `AuthorType`
+if you try to access books from server - it will be null because we don't have resolve for the books --11
+Add resove in to `AuthorType` and `BookType` for the books
+Start the server, you will see fetched data -- 12
