@@ -7,3 +7,28 @@ fetch(
 )
 .then(response => response.text())
 .then(parseXML)
+
+const AuthorType = new GraphQLObjectType({
+  name: 'Author',
+  description: '...',
+
+  fields: () => ({
+    
+  })
+})
+
+module.exports = new GraphQLSchema({
+  query: new GraphQLObjectType({
+    name: 'Query',
+    description: '...',
+
+    fields: () => ({
+      author: {
+        type: AuthorType,
+        args: {
+          id: { type: GraphQLInt}
+        }
+      }
+    })
+  })
+})

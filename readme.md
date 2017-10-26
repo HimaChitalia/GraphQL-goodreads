@@ -18,3 +18,4 @@ xml2js - it is an npm module
 and parseString is a method of xml2js
 xml2js returns callback not promise. SO, you need  to require util to return a promise
 install - // ♥npm install --save xml2js ---5
+define new AuthorType and GraphQLSchema
