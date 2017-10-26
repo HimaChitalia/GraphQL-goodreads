@@ -23,5 +23,5 @@ install node-fetch with command `npm install node-fetch-npm --save` ---6
 util.promisify error ---a
 install util.promisify with the command `npm install util.promisify` --7
 required `require('util.promisify').shim()` in schema.js to make util.promisify work
-
-`
+Now if start node server with command `node serve.js`, you should see graphQL server --8
+AT this point, if we run the query, author will be null because we need to put our fetch request in resolver when we export module --8
