@@ -25,3 +25,5 @@ install util.promisify with the command `npm install util.promisify` --7
 required `require('util.promisify').shim()` in schema.js to make util.promisify work
 Now if start node server with command `node serve.js`, you should see graphQL server --8
 AT this point, if we run the query, author will be null because we need to put our fetch request in resolver when we export module --8
+Add resolve in to `AuthorType`, so that GraphQL server would actually know which is the name property from xml document
+run server and see result --9
